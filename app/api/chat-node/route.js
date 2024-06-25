@@ -38,7 +38,7 @@ export async function POST(req, res) {
 
     try {
         const completion = await openai.createChatCompletion({
-            model: 'gpt-3.5-turbo',
+            model: 'llama3-70b-8192',
             messages: [{ role: 'user', content: prompt }],
             temperature: 1, // 0 - 2
             // top_p: 1,

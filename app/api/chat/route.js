@@ -36,7 +36,7 @@ export async function POST(request) {
     // console.log(prompt)
 
     const payload = {
-        model: 'gpt-3.5-turbo',
+        model: 'llama3-70b-8192',
         messages: [{ role: 'user', content: prompt }],
         temperature: 1,
         // top_p: 1,
